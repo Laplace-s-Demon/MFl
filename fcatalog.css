@@ -24,6 +24,23 @@ body {
     color: black;
 }
 
+.voltar-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: rgb(234, 241, 130); /* Cor amarela */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.voltar-btn:hover {
+    background-color: #e6d15a;
+}
+
 h1 {
     text-align: center; /* Adicionado para centralizar o texto */
     margin-bottom: 20px; /* Opcional: Adiciona um espaço abaixo do título */

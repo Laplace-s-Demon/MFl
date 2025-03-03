@@ -34,6 +34,10 @@ function fecharOverlay() {
     }, 300);
 }
 
+document.getElementById('voltar-categories').addEventListener('click', function() {
+    window.location.href = 'categories.html';
+});
+
 document.getElementById('close-overlay').addEventListener('click', fecharOverlay);
 
 window.addEventListener('click', (event) => {

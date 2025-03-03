@@ -9,3 +9,7 @@ document.querySelector('.t-list').addEventListener('click', () => {
 document.querySelector('.personagens').addEventListener('click', () => {
     // Adicione aqui o link para a página Personagens
 });
+
+document.getElementById('voltar-index').addEventListener('click', function() {
+    window.location.href = 'index.html';
+});
