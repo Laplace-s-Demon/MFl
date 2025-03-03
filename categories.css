@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre os botões */
+}
+
+.category-button {
+    background-color: rgb(234, 241, 130);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 40px; /* Botões maiores */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Largura fixa para manter todos do mesmo tamanho*/
+}
+
+.category-button:hover {
+    background-color: #e6d15a;
+}
+
+.category-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+
+.category-subtitle {
+    font-size: 1em;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .categories-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category-button {
+      width: 90%;
+      padding: 15px 30px;
+    }
+}
