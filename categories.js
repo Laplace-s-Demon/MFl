@@ -3,11 +3,11 @@ document.querySelector('.f-list').addEventListener('click', () => {
 });
 
 document.querySelector('.t-list').addEventListener('click', () => {
-    // Adicione aqui o link para a página T-List
+    window.location.href = 'tcatalog.html'; // Redireciona para tcatalog.html
 });
 
 document.querySelector('.personagens').addEventListener('click', () => {
-    // Adicione aqui o link para a página Personagens
+    window.location.href = 'pcatalog.html'; // Redireciona para pcatalog.html
 });
 
 document.getElementById('voltar-index').addEventListener('click', function() {
