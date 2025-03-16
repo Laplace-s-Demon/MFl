@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             overlayTitle.textContent = title;
             overlayDescription.textContent = description;
             overlayLink.href = link;
-            overlayLink.textContent = "Clique aqui para mais detalhes"; //Adicionado para aparecer o texto do link.
+            overlayLink.textContent = ""; //Adicionado para aparecer o texto do link.
 
             overlay.style.display = 'flex';
         });
