@@ -10,6 +10,10 @@ document.querySelector('.personagens').addEventListener('click', () => {
     window.location.href = 'pcatalog.html'; // Redireciona para pcatalog.html
 });
 
+document.querySelector('.adicionais').addEventListener('click', () => {
+    window.location.href = 'acatalog.html'; // Redireciona para pcatalog.html
+});
+
 document.getElementById('voltar-index').addEventListener('click', function() {
     window.location.href = 'index.html';
 });

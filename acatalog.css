@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: rgb(234, 241, 130);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.back-btn:hover {
+    background-color: #e6d15a;
+}
+
+.dialog-box {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-header {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.dialog-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.dialog-action-btn {
+    background-color: rgb(234, 241, 130);
+    color: black;
+    border: 2px solid black; /* Doubling the border thickness */
+    border-radius: 5px;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-action-btn:hover {
+    background-color: #e6d15a;
+}
+
+.redirect-button {
+    background-color: rgb(234, 241, 130);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.redirect-button:hover {
+    background-color: #e6d15a;
+}
+
+/* Basic overlay styles - adjust as needed */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.overlay.fade-out {
+    opacity: 0;
+}
+
+.overlay-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    color: black;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.close-icon:hover {
+    color: #333;
+}
+
+#resource-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#resource-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Hide the previous category buttons */
+.resource-categories {
+    display: none;
+}
